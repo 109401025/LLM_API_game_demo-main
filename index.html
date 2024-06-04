@@ -170,6 +170,7 @@
                 var message = document.getElementById('messageInput').value;
 
                 addToConversationHistory('user', message);
+                
                 displayMessage(message, 'user');
 
                 fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=' + apiKey, {
